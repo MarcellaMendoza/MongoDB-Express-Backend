@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="center">
+  <h2>Search by:</h2>
+  <div class="grid">
+    <div class="dropdown-content">
+      <button onclick="nameClicked()" id="nameBtn" class="inactive">Name</button>
+      <button onclick="usernameClicked()" id="usernameBtn" class="inactive">Username</button>
+      <button onclick="emailClicked()" id="emailBtn" class="inactive">Email</button>
+      
+  </div>
+  </div>
+  <hr></hr>
+</div>
+
+
+
+  <div class="row2">
+    <!-- This is where user will type their search query -->
+    <label id="instructions">Label</label>
+    <input id="inputField">
+    <button id="find" onclick="findClicked()">Find</button>
+  </div>
+</div>
+
+
+<!-- Document(s) will be show here -->
+<p id="resultElem"></p>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
